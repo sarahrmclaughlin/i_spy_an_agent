@@ -2,7 +2,7 @@
 ### Creating my own LLM API Calls and (hopefully) AI Agents using OpenAI
 - This is a repo of learning
 
-### Some notes 🎶:
+### Some notes 🎶 ♫:
 
 #### Clarify LLM API call v. Agent
 - Currently this notebook is setting up a LLM API call
@@ -14,14 +14,16 @@
 
 #### LLM API Call - What this means:
 - This is a programmatic way to ask ChatGPT to "translate "Bicycle" into Italian and French"
-```response = client.chat.completions.create(
+```
+    response = client.chat.completions.create(
     model=model_name,
     messages=[
         {"role": "system", "content": "You are a Language Translation assistant. You will translate any English text I provide into French and Italian with corresponding articles "
         ""},
         {"role": "user", "content": "Bicycle!"},
     ],
-)```
+)
+```
 - Similar to a RESTAPI call, we first query/call the LLM model
 - Then, we focus on the message array which essentially drives everything here.
     - ```{"role" : "system", "content":prompt}```
