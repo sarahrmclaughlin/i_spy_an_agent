@@ -29,7 +29,7 @@
     - ```{"role" : "system", "content":prompt}```
         - system_prompt = """You are a Language Translation assistant. You will translate this word to English."""
             - This helps the AI understand how to respond. Similar to using ChatGPT UI and typing "Pretend you are a doctor"
-    -```{"role": "user", "content": user_content}```
+    - ```{"role": "user", "content": user_content}```
         - user_content = """Bicycle"""
             - This is where we as users provide the info need for the API call. In this case, we want the word bicyle to be translated.
 
