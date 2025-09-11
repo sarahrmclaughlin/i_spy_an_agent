@@ -1,8 +1,10 @@
 # 👀 SPY AN AGENT 🤖
-#### Creating my own LLM API Calls and (hopefully) AI Agents using OpenAI
+### Creating my own LLM API Calls and (hopefully) AI Agents using OpenAI
 - This is a repo of learning
 
-### Clarify LLM API call v. Agent
+### Some notes 🎶:
+
+#### Clarify LLM API call v. Agent
 - Currently this notebook is setting up a LLM API call
 - If we want to build an Agent, it would include the entire system of:
     - Knowing when to use an LLM
@@ -10,7 +12,7 @@
     - Decide on strategies to update or fix things or just run in general
     - Goes beyond all of this to do more
 
-### LLM API Call - What this means:
+#### LLM API Call - What this means:
 - This is a programmatic way to ask ChatGPT to "translate "Bicycle" into Italian and French"
 ```response = client.chat.completions.create(
     model=model_name,
