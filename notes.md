@@ -9,3 +9,4 @@
     - check that it is > 1 
     - ```pip install --upgrade openai```
 - Install dot env to pull the api key ```pip install python-dotenv```
+
