@@ -2,7 +2,7 @@
 #### Creating my own LLM API Calls and (hopefully) AI Agents using OpenAI
 - This is a repo of learning
 
-# Clarify LLM API call v. Agent
+### Clarify LLM API call v. Agent
 - Currently this notebook is setting up a LLM API call
 - If we want to build an Agent, it would include the entire system of:
     - Knowing when to use an LLM
