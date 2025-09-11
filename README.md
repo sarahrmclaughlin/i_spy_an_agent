@@ -1,2 +1,2 @@
-# I SPY AN AGENT
+# 👀 SPY AN AGENT 🤖
 #### Learning about AI Agents
