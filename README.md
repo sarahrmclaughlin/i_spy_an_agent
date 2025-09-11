@@ -1,2 +1,3 @@
 # 👀 SPY AN AGENT 🤖
-#### Learning about AI Agents
+#### Creating my own AI Agents using OpenAI
+- This is a repo of learning
