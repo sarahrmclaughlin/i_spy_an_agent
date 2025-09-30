@@ -34,7 +34,7 @@
             - This is where we as users provide the info need for the API call. In this case, we want the word bicyle to be translated.
          
 ### Additional Helpful Documentation
-    - Prompt/Context Engineering
-        - Anthropic Tutorial https://github.com/anthropics/prompt-eng-interactive-tutorial
+- Prompt/Context Engineering
+    - Anthropic Tutorial https://github.com/anthropics/prompt-eng-interactive-tutorial
     
 
