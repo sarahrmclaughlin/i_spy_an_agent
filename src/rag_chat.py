@@ -1,30 +1,24 @@
-from src.index_manager import build_or_load_chat_engine, rebuild_index
-from src.llm_fallback import llm_fallback
-from src.knowledge_base import update_kb
+from index_manager import build_or_load_agent, rebuild_agent
+from llm_fallback import llm_fallback
+from knowledge_base import update_kb
 
-# Create chat engine (load or build)
-chat_engine = build_or_load_chat_engine()
+def rag_chat(query: str, agent):
+    """Query the agent (vector index wrapped in FunctionAgent)"""
+    response = agent.chat(query)
+    return str(response)
 
-def rag_chat(query: str, chat_engine=chat_engine):
-    """Query the index and return response"""
-    response = chat_engine.chat(query)
-    return response.response.strip()
+def rag_chat_pipeline(query: str, agent=None):
+    """RAG pipeline with fallback and KB update"""
+    if agent is None:
+        agent = build_or_load_agent()
 
-def rag_chat_pipeline(query: str):
-    """
-    Full pipeline:
-    1. Try RAG
-    2. If no useful result, fallback to LLM
-    3. Save new word in KB + rebuild index
-    """
-    response = rag_chat(query)
+    response = rag_chat(query, agent).strip()
 
     if "I don't know" in response or response.strip() == "":
-        # fallback to LLM
+        # Fall back to LLM
         response = llm_fallback(query)
-
-        # save into KB + rebuild index
+        # Update KB and rebuild agent
         update_kb(query, response)
-        rebuild_index()
+        agent = rebuild_agent()
 
     return response
