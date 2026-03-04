@@ -4,6 +4,8 @@
 
 ### Some notes 🎶 ♫:
 
+#### *This repo creates agents by using agents* (.claude > agents)
+
 #### Clarify LLM API call v. Agent
 - Currently this notebook is setting up a LLM API call
 - If we want to build an Agent, it would include the entire system of:
