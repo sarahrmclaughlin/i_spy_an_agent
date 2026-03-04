@@ -78,3 +78,17 @@ CI runs flake8 on push/PR to `main` (see `.github/workflows/python-package.yml`)
 ```
 
 The RAG pipeline auto-updates this file when the LLM handles an unknown word, then rebuilds the vector index.
+
+# Workflow Orchestration
+
+### 1. Work in Plan Mode first (by defaults)
+- Start plan mode first for non easy, straightforward tasks
+- Ask questions
+
+### 2. Self-improvement Loop (lessons_learned.md)
+
+- Update lessons_learned.md:
+  - After any user corrections or clarifications 
+  - After debugging failures
+- Create rules to prevent same mistakes
+- Make sure to review at start of each session
