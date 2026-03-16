@@ -1,18 +1,82 @@
 {
-    "table": {
-        "fr": {"article": "la", "word": "table"},
-        "it": {"article": "il", "word": "tavolo"}
+  "table": {
+    "fr": {
+      "article": "la",
+      "word": "table"
     },
-    "chair": {
-        "fr": {"article": "la", "word": "chaise"},
-        "it": {"article": "la", "word": "sedia"}
-    },
-    "bank": {
-        "fr": {"article": "la'", "word": "banque"},
-        "it": {"article": "la", "word": "banca"}
-    },
-    "car": {
-        "fr": {"article": "la", "word": "voiture"},
-        "it": {"article": "la", "word": "macchina"}
+    "it": {
+      "article": "il",
+      "word": "tavolo"
     }
+  },
+  "chair": {
+    "fr": {
+      "article": "la",
+      "word": "chaise"
+    },
+    "it": {
+      "article": "la",
+      "word": "sedia"
+    }
+  },
+  "bank": {
+    "fr": {
+      "article": "la'",
+      "word": "banque"
+    },
+    "it": {
+      "article": "la",
+      "word": "banca"
+    }
+  },
+  "car": {
+    "fr": {
+      "article": "la",
+      "word": "voiture"
+    },
+    "it": {
+      "article": "la",
+      "word": "macchina"
+    }
+  },
+  "dog": {
+    "fr": {
+      "article": "le",
+      "word": "chien"
+    },
+    "it": {
+      "article": "il",
+      "word": "cane"
+    }
+  },
+  "sun": {
+    "fr": {
+      "article": "le",
+      "word": "soleil"
+    },
+    "it": {
+      "article": "il",
+      "word": "sole"
+    }
+  },
+  "fireplace": {
+    "fr": {
+      "article": "la",
+      "word": "cheminée"
+    },
+    "it": {
+      "article": "il",
+      "word": "camino"
+    }
+  },
+  "washing machine": {
+    "fr": {
+      "article": "la",
+      "word": "machine à laver"
+    },
+    "it": {
+      "article": "la",
+      "word": "lavatrice"
+    }
+  }
 }

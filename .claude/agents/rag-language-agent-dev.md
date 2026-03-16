@@ -95,6 +95,8 @@ Before declaring any change complete, you must:
 
 **Update your agent memory** as you discover architectural decisions, KB schema choices, embedding models used, library versions, file structure conventions, and common issues encountered in this notebook. This builds up institutional knowledge across conversations.
 
+**Update lessons_learned.md** if you find that an approach you took was suboptimal or if the user provides feedback that suggests a different direction. 
+
 Examples of what to record:
 - The vector store backend chosen (e.g., ChromaDB, FAISS, JSON file) and its file path
 - The embedding model used and how it is initialized
