@@ -1,5 +1,5 @@
 # 👀 SPY AN AGENT 🤖
-### Creating my own LLM API Calls and (hopefully) AI Agents using LLMs
+##### *Creating my own LLM API Calls and (hopefully) AI Agents using LLMs*
 - This is a repo of learning
 
 ### Some notes 🎶 ♫:
