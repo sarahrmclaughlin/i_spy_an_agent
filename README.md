@@ -6,7 +6,7 @@
 
 #### *This repo creates agents by using agents* (.claude > agents)
 
-#### *Contents*
+### *Contents*
 - CLAUDE: Claude.md, a specific Claude agent created to work on this repo, lessons learned about this project that Claude adds to.
 - **My First RAG Language Agent notebook**
 - User Prompt is an English word with goal of translating it to Italian and French
