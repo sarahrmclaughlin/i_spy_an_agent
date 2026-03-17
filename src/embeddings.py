@@ -1,4 +1,5 @@
 """Embeddings and FAISS index management."""
+# TODO: This module is currently unused, but could be integrated into the agent's RAG pipeline as an alternative to LlamaIndex's built-in vector store. It demonstrates how to build and query a FAISS index directly from the KB words.
 
 from sentence_transformers import SentenceTransformer
 import faiss

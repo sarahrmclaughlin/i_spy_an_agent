@@ -39,7 +39,7 @@ uv sync
 
 Or with pip:
 ```bash
-pip install -r requirements.txt
+pip install -e .
 ```
 
 The project uses a `.venv` virtual environment — activate before running notebooks.
