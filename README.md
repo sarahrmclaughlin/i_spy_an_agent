@@ -1,10 +1,7 @@
 # 👀 SPY AN AGENT 🤖
-##### *Creating my own LLM API Calls and (hopefully) AI Agents using LLMs*
+#### *Creating my own LLM API Calls and (hopefully) AI Agents using LLMs*
 - This is a repo of learning
-
-### Some notes 🎶 ♫:
-
-#### *This repo creates agents by using agents* (.claude > agents)
+- This repo creates agents by using agents (.claude > agents)
 
 ### *Contents*
 - CLAUDE: Claude.md, a specific Claude agent created to work on this repo, lessons learned about this project that Claude adds to.
@@ -16,7 +13,7 @@
     - a simple notebook testing out calling the LLM for translations
 
 
-### General Notes about working with LLMs and Agents:
+### General Notes 🎶 ♫ about working with LLMs and Agents:
 
 #### Clarify LLM API call v. Agent
 - Currently my_first_language_agent notebook is setting up a LLM API call
