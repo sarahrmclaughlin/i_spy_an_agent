@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Create a JSON policy document that allows an IAM user to read objects from a specific S3 bucket named 'my-app-logs' and list the bucket contents",
+    "format": "json",
+    "solution_criteria": "Must include correct IAM policy structure with Version, Statement array, Effect 'Allow', Principal or not specified for user attachment, Action array with s3:GetObject and s3:ListBucket, and Resource ARNs for the specific bucket and its objects"
+  },
+  {
+    "task": "Write a Python function that takes an EC2 instance ID and returns a properly formatted CloudWatch metric filter name following AWS naming conventions (alphanumeric and hyphens only)",
+    "format": "python",
+    "solution_criteria": "Function should accept instance ID parameter, replace any invalid characters with hyphens, ensure no consecutive hyphens, strip leading/trailing hyphens, and return a string suitable for CloudWatch metric filter naming"
+  },
+  {
+    "task": "Create a regular expression that validates AWS Lambda function names according to AWS requirements",
+    "format": "regex",
+    "solution_criteria": "Regex must match strings that are 1-64 characters long, contain only letters, numbers, hyphens, and underscores, and cannot start or end with a hyphen"
+  }
+]
