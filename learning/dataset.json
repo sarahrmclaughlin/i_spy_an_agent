@@ -1,17 +1,47 @@
 [
   {
-    "task": "Create a JSON policy document that allows an IAM user to read objects from a specific S3 bucket named 'my-app-logs' and list the bucket contents",
-    "format": "json",
-    "solution_criteria": "Must include correct IAM policy structure with Version, Statement array, Effect 'Allow', Principal or not specified for user attachment, Action array with s3:GetObject and s3:ListBucket, and Resource ARNs for the specific bucket and its objects"
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "65",
+      "goal": "Marathon training - preparing for race in 6 weeks with morning long run session",
+      "restrictions": "Lactose intolerant, no processed meats"
+    },
+    "solution_criteria": [
+      "High carbohydrate content throughout the day",
+      "Pre and post-run nutrition timing specified",
+      "Respects lactose intolerance and processed meat restrictions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-intensity endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around training sessions"
   },
   {
-    "task": "Write a Python function that takes an EC2 instance ID and returns a properly formatted CloudWatch metric filter name following AWS naming conventions (alphanumeric and hyphens only)",
-    "format": "python",
-    "solution_criteria": "Function should accept instance ID parameter, replace any invalid characters with hyphens, ensure no consecutive hyphens, strip leading/trailing hyphens, and return a string suitable for CloudWatch metric filter naming"
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "95",
+      "goal": "muscle building and strength gains for powerlifting competition prep",
+      "restrictions": "lactose intolerant"
+    },
+    "solution_criteria": [
+      "Provides high protein content appropriate for strength athlete",
+      "Includes calorie-dense meals suitable for muscle building",
+      "Accommodates lactose intolerance restriction"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength-focused athlete (powerlifter) needing high protein content and calorie-dense meals for muscle building and recovery"
   },
   {
-    "task": "Create a regular expression that validates AWS Lambda function names according to AWS requirements",
-    "format": "regex",
-    "solution_criteria": "Regex must match strings that are 1-64 characters long, contain only letters, numbers, hyphens, and underscores, and cannot start or end with a hyphen"
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "70",
+      "goal": "Cut to 68kg for competition in 10 days while maintaining strength and energy",
+      "restrictions": "No dairy, must avoid high-sodium foods to prevent water retention"
+    },
+    "solution_criteria": [
+      "Daily calorie target appropriate for 2kg weight loss over 10 days",
+      "Includes specific meal timing and portions",
+      "Avoids dairy and high-sodium foods"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a weight-class restricted athlete (wrestler/boxer) requiring precise calorie control while maintaining performance nutrition"
   }
 ]

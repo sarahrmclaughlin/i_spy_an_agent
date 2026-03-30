@@ -1,0 +1,62 @@
+[
+  {
+    "output": "Based on this person's profile, here's what I'd recommend for their pre-long run meal:\n\n## **Pre-Run Meal (2-3 hours before morning run)**\n\n**Main Options:**\n- Oatmeal with banana, honey, and a small handful of nuts\n- Toast with natural almond butter and sliced banana\n- Rice with a small amount of lean chicken and a bit of salt\n\n**Additional considerations:**\n- Drink 16-20 oz of water\n- Keep it familiar - nothing new during training\n- Aim for 300-500 calories\n- Focus on easily digestible carbs with minimal fiber/fat\n\n## **Post-Run Recovery Meal (within 30-60 minutes)**\n\n**Carb + Protein combinations:**\n- Lactose-free chocolate milk or plant-based milk with banana\n- Rice cakes with natural nut butter\n- Quinoa bowl with grilled chicken and vegetables\n- Smoothie with lactose-free protein powder, berries, and oats\n\n## **Key Points:**\n- **Timing matters**: Eat 2-3 hours before for digestion\n- **Hydration**: Start hydrating the night before\n- **Recovery**: 3:1 or 4:1 carb-to-protein ratio post-run\n- **Avoid**: High fiber, high fat, or new foods before the run\n\nAt 175cm/65kg, they're likely in good shape for marathon training. The focus should be on fueling performance and recovery rather than weight management.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "175",
+        "weight": "65",
+        "goal": "Marathon training - preparing for race in 6 weeks with morning long run session",
+        "restrictions": "Lactose intolerant, no processed meats"
+      },
+      "solution_criteria": [
+        "High carbohydrate content throughout the day",
+        "Pre and post-run nutrition timing specified",
+        "Respects lactose intolerance and processed meat restrictions"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-intensity endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around training sessions"
+    },
+    "score": 2,
+    "reasoning": "While the solution demonstrates good understanding of marathon nutrition principles and properly addresses dietary restrictions, it fails the mandatory requirement of including a daily caloric total. Additionally, it only provides partial meal planning focused on run-specific nutrition rather than a complete 1-day meal plan as requested."
+  },
+  {
+    "output": "Based on this person's profile, here's a meal strategy for muscle building and powerlifting prep:\n\n## **Caloric & Macro Targets**\n- **Calories**: ~3,200-3,500/day (surplus for muscle growth)\n- **Protein**: 190-210g/day (2-2.2g per kg bodyweight)\n- **Carbs**: 380-475g/day (fuel for intense training)\n- **Fats**: 90-115g/day (hormone production, recovery)\n\n## **Sample Meal Plan**\n\n**Pre-Workout (1-2 hours before)**\n- Oatmeal with banana and almond butter\n- Black coffee or pre-workout supplement\n\n**Post-Workout (within 30 minutes)**\n- Lactose-free whey protein shake OR plant protein\n- White rice or dextrose for quick carbs\n\n**Main Meals**\n- **Breakfast**: Eggs, turkey bacon, hash browns, berries\n- **Lunch**: Grilled chicken breast, quinoa, roasted vegetables\n- **Dinner**: Lean beef or salmon, sweet potato, mixed greens\n- **Snacks**: Mixed nuts, rice cakes with almond butter, lactose-free Greek yogurt\n\n## **Lactose-Free Protein Sources**\n- Chicken, beef, fish, eggs\n- Lactose-free whey or plant-based protein powder\n- Hard cheeses (often naturally low in lactose)\n- Lactose-free dairy products\n\n**Timing**: Eat every 3-4 hours, prioritize protein at each meal, and fuel properly around training sessions.\n\nWould you like me to elaborate on any specific aspect of this plan?",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180",
+        "weight": "95",
+        "goal": "muscle building and strength gains for powerlifting competition prep",
+        "restrictions": "lactose intolerant"
+      },
+      "solution_criteria": [
+        "Provides high protein content appropriate for strength athlete",
+        "Includes calorie-dense meals suitable for muscle building",
+        "Accommodates lactose intolerance restriction"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a strength-focused athlete (powerlifter) needing high protein content and calorie-dense meals for muscle building and recovery"
+    },
+    "score": 7,
+    "reasoning": "The solution meets the mandatory requirement by including daily caloric totals (though as a range). It successfully addresses all secondary criteria with appropriate protein content for strength athletes, calorie-dense meals for muscle building, and comprehensive lactose intolerance accommodations. However, the caloric target is presented as a range rather than a specific daily total, and portion sizes are not specified to validate the actual nutritional content."
+  },
+  {
+    "output": "For this 10-day competition cut, here's a strategic meal approach:\n\n## **Daily Calorie & Macro Targets**\n- **Calories**: 1,800-1,900 (moderate deficit)\n- **Protein**: 140-150g (2g per kg bodyweight)\n- **Carbs**: 150-175g (timed around workouts)\n- **Fats**: 60-70g\n\n## **Sample Daily Meal Plan**\n\n**Breakfast** (400-450 cal)\n- 3 egg whites + 1 whole egg scrambled\n- 40g oats with berries\n- 1 tsp almond butter\n\n**Pre-workout** (150 cal)\n- 1 banana + black coffee\n\n**Post-workout** (350 cal)\n- Plant-based protein shake (30g protein)\n- 1 medium sweet potato\n\n**Lunch** (450-500 cal)\n- 120g lean chicken/fish\n- 80g jasmine rice\n- Mixed vegetables (steamed)\n\n**Dinner** (400 cal)\n- 100g white fish\n- Large green salad with olive oil\n- Steamed asparagus/broccoli\n\n**Evening** (200 cal)\n- 30g almonds or protein shake if needed\n\n## **Key Strategies**\n- **Hydration**: 3-4L water daily (reduce to 1-2L final 2 days)\n- **Sodium**: Keep under 1,500mg daily\n- **Timing**: Eat most carbs around training\n- **Final 48hrs**: Reduce water and carbs further for competition weight\n\nThis should help you lose 2kg while maintaining performance!",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "175",
+        "weight": "70",
+        "goal": "Cut to 68kg for competition in 10 days while maintaining strength and energy",
+        "restrictions": "No dairy, must avoid high-sodium foods to prevent water retention"
+      },
+      "solution_criteria": [
+        "Daily calorie target appropriate for 2kg weight loss over 10 days",
+        "Includes specific meal timing and portions",
+        "Avoids dairy and high-sodium foods"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a weight-class restricted athlete (wrestler/boxer) requiring precise calorie control while maintaining performance nutrition"
+    },
+    "score": 9,
+    "reasoning": "The solution meets all mandatory requirements by providing a clear daily caloric total. It also satisfies all secondary criteria with appropriate calorie targets for the weight loss goal, specific meal timing and portions, and proper avoidance of dairy and high-sodium foods. The plan is well-structured and practical for an athlete's needs."
+  }
+]

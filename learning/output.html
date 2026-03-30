@@ -1,0 +1,275 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">6.0 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">66.7%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with a high-intensity endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around training sessions</td>
+                <td class="prompt-inputs"><strong>height:</strong> 175<br><strong>weight:</strong> 65<br><strong>goal:</strong> Marathon training - preparing for race in 6 weeks with morning long run session<br><strong>restrictions:</strong> Lactose intolerant, no processed meats</td>
+                <td class="criteria">• High carbohydrate content throughout the day<br>• Pre and post-run nutrition timing specified<br>• Respects lactose intolerance and processed meat restrictions</td>
+                <td class="output"><pre>Based on this person's profile, here's what I'd recommend for their pre-long run meal:
+
+## **Pre-Run Meal (2-3 hours before morning run)**
+
+**Main Options:**
+- Oatmeal with banana, honey, and a small handful of nuts
+- Toast with natural almond butter and sliced banana
+- Rice with a small amount of lean chicken and a bit of salt
+
+**Additional considerations:**
+- Drink 16-20 oz of water
+- Keep it familiar - nothing new during training
+- Aim for 300-500 calories
+- Focus on easily digestible carbs with minimal fiber/fat
+
+## **Post-Run Recovery Meal (within 30-60 minutes)**
+
+**Carb + Protein combinations:**
+- Lactose-free chocolate milk or plant-based milk with banana
+- Rice cakes with natural nut butter
+- Quinoa bowl with grilled chicken and vegetables
+- Smoothie with lactose-free protein powder, berries, and oats
+
+## **Key Points:**
+- **Timing matters**: Eat 2-3 hours before for digestion
+- **Hydration**: Start hydrating the night before
+- **Recovery**: 3:1 or 4:1 carb-to-protein ratio post-run
+- **Avoid**: High fiber, high fat, or new foods before the run
+
+At 175cm/65kg, they're likely in good shape for marathon training. The focus should be on fueling performance and recovery rather than weight management.</pre></td>
+                <td class="score-col"><span class="score score-low">2</span></td>
+                <td class="reasoning">While the solution demonstrates good understanding of marathon nutrition principles and properly addresses dietary restrictions, it fails the mandatory requirement of including a daily caloric total. Additionally, it only provides partial meal planning focused on run-specific nutrition rather than a complete 1-day meal plan as requested.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a strength-focused athlete (powerlifter) needing high protein content and calorie-dense meals for muscle building and recovery</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180<br><strong>weight:</strong> 95<br><strong>goal:</strong> muscle building and strength gains for powerlifting competition prep<br><strong>restrictions:</strong> lactose intolerant</td>
+                <td class="criteria">• Provides high protein content appropriate for strength athlete<br>• Includes calorie-dense meals suitable for muscle building<br>• Accommodates lactose intolerance restriction</td>
+                <td class="output"><pre>Based on this person's profile, here's a meal strategy for muscle building and powerlifting prep:
+
+## **Caloric & Macro Targets**
+- **Calories**: ~3,200-3,500/day (surplus for muscle growth)
+- **Protein**: 190-210g/day (2-2.2g per kg bodyweight)
+- **Carbs**: 380-475g/day (fuel for intense training)
+- **Fats**: 90-115g/day (hormone production, recovery)
+
+## **Sample Meal Plan**
+
+**Pre-Workout (1-2 hours before)**
+- Oatmeal with banana and almond butter
+- Black coffee or pre-workout supplement
+
+**Post-Workout (within 30 minutes)**
+- Lactose-free whey protein shake OR plant protein
+- White rice or dextrose for quick carbs
+
+**Main Meals**
+- **Breakfast**: Eggs, turkey bacon, hash browns, berries
+- **Lunch**: Grilled chicken breast, quinoa, roasted vegetables
+- **Dinner**: Lean beef or salmon, sweet potato, mixed greens
+- **Snacks**: Mixed nuts, rice cakes with almond butter, lactose-free Greek yogurt
+
+## **Lactose-Free Protein Sources**
+- Chicken, beef, fish, eggs
+- Lactose-free whey or plant-based protein powder
+- Hard cheeses (often naturally low in lactose)
+- Lactose-free dairy products
+
+**Timing**: Eat every 3-4 hours, prioritize protein at each meal, and fuel properly around training sessions.
+
+Would you like me to elaborate on any specific aspect of this plan?</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution meets the mandatory requirement by including daily caloric totals (though as a range). It successfully addresses all secondary criteria with appropriate protein content for strength athletes, calorie-dense meals for muscle building, and comprehensive lactose intolerance accommodations. However, the caloric target is presented as a range rather than a specific daily total, and portion sizes are not specified to validate the actual nutritional content.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a weight-class restricted athlete (wrestler/boxer) requiring precise calorie control while maintaining performance nutrition</td>
+                <td class="prompt-inputs"><strong>height:</strong> 175<br><strong>weight:</strong> 70<br><strong>goal:</strong> Cut to 68kg for competition in 10 days while maintaining strength and energy<br><strong>restrictions:</strong> No dairy, must avoid high-sodium foods to prevent water retention</td>
+                <td class="criteria">• Daily calorie target appropriate for 2kg weight loss over 10 days<br>• Includes specific meal timing and portions<br>• Avoids dairy and high-sodium foods</td>
+                <td class="output"><pre>For this 10-day competition cut, here's a strategic meal approach:
+
+## **Daily Calorie & Macro Targets**
+- **Calories**: 1,800-1,900 (moderate deficit)
+- **Protein**: 140-150g (2g per kg bodyweight)
+- **Carbs**: 150-175g (timed around workouts)
+- **Fats**: 60-70g
+
+## **Sample Daily Meal Plan**
+
+**Breakfast** (400-450 cal)
+- 3 egg whites + 1 whole egg scrambled
+- 40g oats with berries
+- 1 tsp almond butter
+
+**Pre-workout** (150 cal)
+- 1 banana + black coffee
+
+**Post-workout** (350 cal)
+- Plant-based protein shake (30g protein)
+- 1 medium sweet potato
+
+**Lunch** (450-500 cal)
+- 120g lean chicken/fish
+- 80g jasmine rice
+- Mixed vegetables (steamed)
+
+**Dinner** (400 cal)
+- 100g white fish
+- Large green salad with olive oil
+- Steamed asparagus/broccoli
+
+**Evening** (200 cal)
+- 30g almonds or protein shake if needed
+
+## **Key Strategies**
+- **Hydration**: 3-4L water daily (reduce to 1-2L final 2 days)
+- **Sodium**: Keep under 1,500mg daily
+- **Timing**: Eat most carbs around training
+- **Final 48hrs**: Reduce water and carbs further for competition weight
+
+This should help you lose 2kg while maintaining performance!</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution meets all mandatory requirements by providing a clear daily caloric total. It also satisfies all secondary criteria with appropriate calorie targets for the weight loss goal, specific meal timing and portions, and proper avoidance of dairy and high-sodium foods. The plan is well-structured and practical for an athlete's needs.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    
