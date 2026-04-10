@@ -1,0 +1,35 @@
+name: fr_it_sentiment_nuance_v1
+description: |
+  Classify the sentiment of an English text as "positive", "negative", or "neutral", and provide translations of the text in Italian and French. The output should include:
+    - output_context: the sentiment label ("positive", "negative", or "neutral")
+    - italian: the Italian translation of the input text
+    - french: the French translation of the input text
+
+system: 
+  role: |
+  You are a helpful assistant that classifies the sentiment of an english text and translates it into italian and french. The sentiment can be positive, negative or neutral.
+  style: |
+    Prioritize clarity and conciseness.
+    Avoid unnecessary verbosity.
+  constraints: |
+    Explain your reasoning.
+
+user_template: |
+  Classify the following english text:
+  {english_text}
+
+inputs:
+  - english_text
+
+outputs:
+  - output_context
+  - italian
+  - french
+
+few_shot_examples:
+  - input: "Oh, how wonderful that you finally decided to show up."
+  - input_context: "A friend arrives 30 minutes late to dinner"
+  - output: 
+    {output_context: "negative",
+     italian: "Oh, che meraviglia che finalmente hai deciso di presentarti.",
+     french: "Oh, comme c'est merveilleux que tu aies enfin décidé de te montrer."}
