@@ -35,15 +35,11 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
         run: |
-          my_first_prompt_language_eval.ipynb
+          evaluations/run_eval.py
       
       # Step 5: CHECK IF RESULTS ARE GOOD ENOUGH
-       # TODO: Implement this script based on notebook.
-          # python evaluations/scripts/check_score.py}
-      - name: Check evaluation score
-        run: |
-          my_first_prompt_language_eval.ipynb
-      
+       # TODO: Implement this script.
+
       # Step 6: ALWAYS UPLOAD RESULTS (even if step 5 failed)
       # Use this to ensure we have a record of the evaluation results.
       - name: Upload results
