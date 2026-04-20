@@ -16,14 +16,14 @@ from pathlib import Path
 from anthropic import Anthropic
 from dotenv import load_dotenv
 
+from src.eval_funcs import (load_prompt, load_eval_set,
+                             calculate_score, parse_output)
+
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 load_dotenv()
 
 sys.path.insert(0, str(Path(".").resolve()))
-
-from src.eval_funcs import (load_prompt, load_eval_set, calculate_translation_similarity,
-                             calculate_score, parse_output)
 
 
 def run_evaluation(prompt_config: Dict, eval_set: Dict) -> List[Dict]:
