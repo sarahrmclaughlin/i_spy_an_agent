@@ -1,0 +1,36 @@
+name: fr_it_prompt_v1
+description: |
+  Provide translations of the text in Italian and French. The output should include:
+    - italian: the Italian translation of the input text
+    - french: the French translation of the input text
+    - sentence_type: the type of sentence (e.g., simple, compound, complex, nuanced)
+    - sentiment: the sentiment expressed in the sentence (e.g., positive, negative, neutral)
+    - notes: any additional notes or observations about the sentence
+system: 
+  role: |
+    You are a helpful assistant that translates english text into italian and french.
+  style: |
+    Prioritize clarity and conciseness.
+    Avoid unnecessary verbosity.
+# constraints: |
+#   Explain your reasoning.
+user_template: |
+  Translate the following english text:
+  {english_text}
+inputs:
+  - english_text
+outputs:
+  - italian
+  - french
+  - sentence_type
+  - sentiment
+  - notes
+few_shot_examples:
+  - inputs:
+      english_text: "Oh, how wonderful that you finally decided to show up."
+    outputs:
+      italian: "Oh, che meraviglia che finalmente hai deciso di presentarti."
+      french: "Oh, comme c'est merveilleux que tu aies enfin décidé de te montrer."
+      sentence_type: "nuanced"
+      sentiment: "negative"
+      notes: "The sentence expresses a negative sentiment, as it conveys disappointment and criticism for someone's tardiness."
