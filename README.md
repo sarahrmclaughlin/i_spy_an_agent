@@ -11,6 +11,8 @@
     - If it does not exists in KB, call LLM(OpenAI) and store response in KB.
 - **My First Language Agent notebook**
     - a simple notebook testing out calling the LLM for translations
+- **Prompt Evaluations**
+    - a notebook and script /evaluations /prompts for prompt tuning eval metrics. 
 - **Learning** *see: > /learning*
     - Using Anthropics course to reinforce LLM API knowledge.
     - I adapted the course teachings to focus on this project's language goals.
