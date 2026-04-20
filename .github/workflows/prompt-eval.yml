@@ -38,9 +38,11 @@ jobs:
           python evaluations/scripts/run_eval.py
       
       # Step 5: CHECK IF RESULTS ARE GOOD ENOUGH
+       # TODO: Implement this script based on notebook.
+          # python evaluations/scripts/check_score.py}
       - name: Check evaluation score
         run: |
-          python evaluations/scripts/check_score.py
+          my_first_prompt_language_eval.ipynb
       
       # Step 6: ALWAYS UPLOAD RESULTS (even if step 5 failed)
       # Use this to ensure we have a record of the evaluation results.
