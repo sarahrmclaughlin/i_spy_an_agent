@@ -35,7 +35,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
         run: |
-          python evaluations/scripts/run_eval.py
+          my_first_prompt_language_eval.ipynb
       
       # Step 5: CHECK IF RESULTS ARE GOOD ENOUGH
        # TODO: Implement this script based on notebook.
