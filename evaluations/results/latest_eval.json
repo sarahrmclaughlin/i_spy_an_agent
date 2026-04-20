@@ -1,0 +1,277 @@
+[
+  {
+    "english": "The book is on the table.",
+    "expected": {
+      "italian": "Il libro \u00e8 sul tavolo.",
+      "french": "Le livre est sur la table.",
+      "sentiment": "neutral",
+      "sentence_type": "straightforward",
+      "notes": "Direct lexical and structural equivalence."
+    },
+    "actual": {
+      "output_context": "Here are the translations:\n\n**Italian:** Il libro \u00e8 sul tavolo.\n\n**French:** Le livre est sur la table.",
+      "fr": "** Le livre est sur la table.",
+      "it": "** Il libro \u00e8 sul tavolo."
+    },
+    "total_score": 0.0,
+    "score_breakdown": {
+      "italian": 0.0,
+      "french": 0.0,
+      "sentiment": 0.0,
+      "sentence_type": 0.0,
+      "notes": 0.0
+    },
+    "status": "success",
+    "passed": false
+  },
+  {
+    "english": "She is my sister.",
+    "expected": {
+      "italian": "Lei \u00e8 mia sorella.",
+      "french": "Elle est ma s\u0153ur.",
+      "sentiment": "neutral",
+      "sentence_type": "straightforward",
+      "notes": "Simple possessive construction with direct mapping."
+    },
+    "actual": {
+      "output_context": "Here are the translations:\n\n**Italian:** Lei \u00e8 mia sorella.\n\n**French:** Elle est ma s\u0153ur.",
+      "fr": "** Elle est ma s\u0153ur.",
+      "it": "** Lei \u00e8 mia sorella."
+    },
+    "total_score": 0.0,
+    "score_breakdown": {
+      "italian": 0.0,
+      "french": 0.0,
+      "sentiment": 0.0,
+      "sentence_type": 0.0,
+      "notes": 0.0
+    },
+    "status": "success",
+    "passed": false
+  },
+  {
+    "english": "We are eating dinner.",
+    "expected": {
+      "italian": "Stiamo mangiando.",
+      "french": "Nous sommes en train de d\u00eener.",
+      "sentiment": "neutral",
+      "sentence_type": "straightforward",
+      "notes": "Italian often omits 'dinner'; French keeps progressive structure."
+    },
+    "actual": {
+      "output_context": "Here are the translations:\n\n**Italian:** Stiamo cenando.\n\n**French:** Nous d\u00eenons.",
+      "fr": "** Nous d\u00eenons.",
+      "it": "** Stiamo cenando."
+    },
+    "total_score": 0.0,
+    "score_breakdown": {
+      "italian": 0.0,
+      "french": 0.0,
+      "sentiment": 0.0,
+      "sentence_type": 0.0,
+      "notes": 0.0
+    },
+    "status": "success",
+    "passed": false
+  },
+  {
+    "english": "I miss you.",
+    "expected": {
+      "italian": "Mi manchi.",
+      "french": "Tu me manques.",
+      "sentiment": "emotional/positive",
+      "sentence_type": "nuanced",
+      "notes": "Subject-object inversion; passive emotional framing."
+    },
+    "actual": {
+      "output_context": "Here are the translations:\n\n**Italian:** Ti manco.\n\n**French:** Tu me manques.\n\nNote: In Italian, the structure is different from English - literally \"I am missed by you.\" In French, it's \"You are missing to me.\" Both express the same sentiment as the English \"I miss you.\"",
+      "fr": "In Italian, the structure is different from English - literally \"I am missed by you.\" In French, it's \"You are missing to me.\" Both express the same sentiment as the English \"I miss you.\"",
+      "it": "** Ti manco."
+    },
+    "total_score": 0.0,
+    "score_breakdown": {
+      "italian": 0.0,
+      "french": 0.0,
+      "sentiment": 0.0,
+      "sentence_type": 0.0,
+      "notes": 0.0
+    },
+    "status": "success",
+    "passed": false
+  },
+  {
+    "english": "It\u2019s getting late.",
+    "expected": {
+      "italian": "Si sta facendo tardi.",
+      "french": "Il se fait tard.",
+      "sentiment": "neutral",
+      "sentence_type": "nuanced",
+      "notes": "Impersonal construction; no direct equivalent of 'it'."
+    },
+    "actual": {
+      "output_context": "Here are the translations:\n\n**Italian:** Si sta facendo tardi.\n\n**French:** Il se fait tard.",
+      "fr": "** Il se fait tard.",
+      "it": "** Si sta facendo tardi."
+    },
+    "total_score": 0.0,
+    "score_breakdown": {
+      "italian": 0.0,
+      "french": 0.0,
+      "sentiment": 0.0,
+      "sentence_type": 0.0,
+      "notes": 0.0
+    },
+    "status": "success",
+    "passed": false
+  },
+  {
+    "english": "He\u2019s right.",
+    "expected": {
+      "italian": "Ha ragione.",
+      "french": "Il a raison.",
+      "sentiment": "neutral/affirmative",
+      "sentence_type": "nuanced",
+      "notes": "Conceptualized as 'having reason' rather than 'being right'."
+    },
+    "actual": {
+      "output_context": "**Italian:** Ha ragione.\n\n**French:** Il a raison.",
+      "fr": "** Il a raison.",
+      "it": "** Ha ragione."
+    },
+    "total_score": 0.0,
+    "score_breakdown": {
+      "italian": 0.0,
+      "french": 0.0,
+      "sentiment": 0.0,
+      "sentence_type": 0.0,
+      "notes": 0.0
+    },
+    "status": "success",
+    "passed": false
+  },
+  {
+    "english": "I feel like going out.",
+    "expected": {
+      "italian": "Ho voglia di uscire.",
+      "french": "J\u2019ai envie de sortir.",
+      "sentiment": "neutral/positive",
+      "sentence_type": "nuanced",
+      "notes": "Expressed as 'having desire' rather than a feeling state."
+    },
+    "actual": {
+      "output_context": "Here are the translations:\n\n**Italian:** Mi va di uscire.\n\n**French:** J'ai envie de sortir.",
+      "fr": "** J'ai envie de sortir.",
+      "it": "** Mi va di uscire."
+    },
+    "total_score": 0.0,
+    "score_breakdown": {
+      "italian": 0.0,
+      "french": 0.0,
+      "sentiment": 0.0,
+      "sentence_type": 0.0,
+      "notes": 0.0
+    },
+    "status": "success",
+    "passed": false
+  },
+  {
+    "english": "Awkward",
+    "expected": {
+      "italian": "imbarazzante / goffo / strano",
+      "french": "g\u00eanant / maladroit / bizarre",
+      "sentiment": "mildly negative",
+      "sentence_type": "non_translatable",
+      "notes": "Requires context; multiple meanings split across different words."
+    },
+    "actual": {
+      "output_context": "Here are the translations:\n\n**Italian:** imbarazzante / goffo\n**French:** g\u00eanant / maladroit\n\nNote: Both languages have multiple ways to express \"awkward\" depending on the context:\n- Italian: \"imbarazzante\" (embarrassing/uncomfortable) or \"goffo\" (clumsy/ungraceful)\n- French: \"g\u00eanant\" (embarrassing/uncomfortable) or \"maladroit\" (",
+      "fr": "\"g\u00eanant\" (embarrassing/uncomfortable) or \"maladroit\" (",
+      "it": "\"imbarazzante\" (embarrassing/uncomfortable) or \"goffo\" (clumsy/ungraceful)"
+    },
+    "total_score": 0.0,
+    "score_breakdown": {
+      "italian": 0.0,
+      "french": 0.0,
+      "sentiment": 0.0,
+      "sentence_type": 0.0,
+      "notes": 0.0
+    },
+    "status": "success",
+    "passed": false
+  },
+  {
+    "english": "Cringe",
+    "expected": {
+      "italian": "che imbarazzo / imbarazzante",
+      "french": "malaisant / \u00e7a me g\u00eane",
+      "sentiment": "negative/social discomfort",
+      "sentence_type": "non_translatable",
+      "notes": "Internet slang; culturally and generationally dependent."
+    },
+    "actual": {
+      "output_context": "Here are the translations:\n\n**Italian:** Cringe (often used as is, or \"imbarazzante\" / \"che fa venire i brividi\")\n\n**French:** Cringe (often used as is, or \"g\u00eanant\" / \"embarrassant\")\n\nNote: \"Cringe\" is commonly used as-is in both Italian and French, especially among younger speakers and in internet contexts. The alternative translations provided capture the meaning of something being embarrass",
+      "fr": "\"Cringe\" is commonly used as-is in both Italian and French, especially among younger speakers and in internet contexts. The alternative translations provided capture the meaning of something being embarrass",
+      "it": "** Cringe (often used as is, or \"imbarazzante\" / \"che fa venire i brividi\")"
+    },
+    "total_score": 0.0,
+    "score_breakdown": {
+      "italian": 0.0,
+      "french": 0.0,
+      "sentiment": 0.0,
+      "sentence_type": 0.0,
+      "notes": 0.0
+    },
+    "status": "success",
+    "passed": false
+  },
+  {
+    "english": "Cozy",
+    "expected": {
+      "italian": "accogliente / confortevole",
+      "french": "douillet / confortable",
+      "sentiment": "positive",
+      "sentence_type": "non_translatable",
+      "notes": "Emotional warmth + physical comfort not captured by a single exact word."
+    },
+    "actual": {
+      "output_context": "Here are the translations:\n\n**Italian:** Accogliente\n\n**French:** Douillet / Confortable\n\nNote: In French, \"douillet\" emphasizes the warm, snug feeling, while \"confortable\" is more general for comfortable. Both can be used depending on the specific context.",
+      "fr": "In French, \"douillet\" emphasizes the warm, snug feeling, while \"confortable\" is more general for comfortable. Both can be used depending on the specific context.",
+      "it": "** Accogliente"
+    },
+    "total_score": 0.0,
+    "score_breakdown": {
+      "italian": 0.0,
+      "french": 0.0,
+      "sentiment": 0.0,
+      "sentence_type": 0.0,
+      "notes": 0.0
+    },
+    "status": "success",
+    "passed": false
+  },
+  {
+    "english": "Oversharing",
+    "expected": {
+      "italian": "condividere troppo (informazioni personali)",
+      "french": "trop en dire / divulguer trop d\u2019informations",
+      "sentiment": "negative/social",
+      "sentence_type": "non_translatable",
+      "notes": "Modern social concept requiring paraphrase rather than a single lexical item."
+    },
+    "actual": {
+      "output_context": "Here are the translations:\n\n**Italian:** Condivisione eccessiva\n\n**French:** Partage excessif\n\nBoth translations capture the concept of sharing too much personal information, typically in social contexts or on social media.",
+      "fr": "** Partage excessif",
+      "it": "** Condivisione eccessiva"
+    },
+    "total_score": 0.0,
+    "score_breakdown": {
+      "italian": 0.0,
+      "french": 0.0,
+      "sentiment": 0.0,
+      "sentence_type": 0.0,
+      "notes": 0.0
+    },
+    "status": "success",
+    "passed": false
+  }
+]
