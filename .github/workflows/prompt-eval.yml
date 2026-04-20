@@ -39,6 +39,8 @@ jobs:
           CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
         run: |
           uv run python evaluations/run_eval.py
+        env: 
+          PYTHONPATH: ${{ github.workspace }}
       
       # Step 5: CHECK IF RESULTS ARE GOOD ENOUGH
        # TODO: Implement this script.
