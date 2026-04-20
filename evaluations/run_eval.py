@@ -7,7 +7,6 @@
 # - Repeat process
 
 import json
-import yaml
 import logging
 import os
 import sys
