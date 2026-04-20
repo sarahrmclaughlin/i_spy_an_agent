@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'prompts/**'
+      - 'my_first_prompt_language_eval.ipynb'
       - 'evaluations/test_data/**'
       - '.github/workflows/prompt-eval.yml'
   pull_request:
