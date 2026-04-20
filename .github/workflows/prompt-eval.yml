@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - 'prompts/**'
-      - 'my_first_prompt_language_eval.ipynb'
       - 'evaluations/test_data/**'
       - '.github/workflows/prompt-eval.yml'
   pull_request:
@@ -35,7 +34,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
         run: |
-          evaluations/run_eval.py
+          python evaluations/run_eval.py
       
       # Step 5: CHECK IF RESULTS ARE GOOD ENOUGH
        # TODO: Implement this script.

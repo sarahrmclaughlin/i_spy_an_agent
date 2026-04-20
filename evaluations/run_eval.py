@@ -29,7 +29,7 @@ from src.eval_funcs import (load_prompt, load_eval_set, calculate_translation_si
 
 def run_evaluation(prompt_config: Dict, eval_set: Dict) -> List[Dict]:
 
-    client = Anthropic(api_key=os.getenv("CLAUDE_COURSE_API_KEY"))
+    client = Anthropic(api_key=os.getenv("CLAUDE_API_KEY"))
     model_name = "claude-sonnet-4-0"
     results = []
     
