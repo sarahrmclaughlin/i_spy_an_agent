@@ -28,7 +28,7 @@ jobs:
       #   run: |
       #     pip install openai anthropic pyyaml python-dotenv
       - name: Install UV and sync dependencies
-          run: |
+        run: |
             pip install uv
             uv sync
       
