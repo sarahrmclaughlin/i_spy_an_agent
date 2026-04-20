@@ -1,0 +1,50 @@
+name: Prompt Evaluation
+
+on:
+  push:
+    paths:
+      - 'prompts/**'
+      - 'evaluations/test_data/**'
+  pull_request:
+    paths:
+      - 'prompts/**'
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Get your code
+      - uses: actions/checkout@v3
+      
+      # Step 2: Install Python runtime
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      # Step 3: Install Python packages
+      - name: Install dependencies
+        run: |
+          pip install openai anthropic pyyaml python-dotenv
+      
+      # Step 4: RUN THE ACTUAL EVALUATION
+      - name: Run prompt evaluation
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
+        run: |
+          python evaluations/scripts/run_eval.py
+      
+      # Step 5: CHECK IF RESULTS ARE GOOD ENOUGH
+      - name: Check evaluation score
+        run: |
+          python evaluations/scripts/check_score.py
+      
+      # Step 6: ALWAYS UPLOAD RESULTS (even if step 5 failed)
+      # Use this to ensure we have a record of the evaluation results.
+      - name: Upload results
+        if: always()  # ← KEY: Run even if previous steps failed
+        uses: actions/upload-artifact@v3
+        with:
+          name: eval-results  # ← Artifact will be named "eval-results"
+          path: evaluations/results/  # ← Upload everything in this folder

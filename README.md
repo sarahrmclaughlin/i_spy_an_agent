@@ -59,6 +59,16 @@
     - ```pip install --upgrade openai```
 - Install dot env to pull the api key ```pip install python-dotenv```
 
+#### LLM API Keys Stored in Github Secrets
+- Go to your GitHub repository
+- Click Settings (top right)
+- In the left sidebar, click Secrets and variables → Actions
+- Click New repository secret
+- Name: OPENAI_API_KEY (must match what your code expects)
+- Secret: Paste your actual API key
+- Click Add secret
+##### *Include this in Github Actions workflows, for local dev use dotenv*
+
 #### RAG portion of the project
 - The overall goal is to give an English word and have it translate to French and Italian
 - When we run the query for this, we want it to use the Knowledge Base first, then go to the LLM.

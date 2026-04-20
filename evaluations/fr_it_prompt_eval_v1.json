@@ -1,0 +1,92 @@
+{
+  "translations": [
+    {
+      "english": "The book is on the table.",
+      "italian": "Il libro è sul tavolo.",
+      "french": "Le livre est sur la table.",
+      "type": "straightforward",
+      "sentiment": "neutral",
+      "notes": "Direct lexical and structural equivalence."
+    },
+    {
+      "english": "She is my sister.",
+      "italian": "Lei è mia sorella.",
+      "french": "Elle est ma sœur.",
+      "type": "straightforward",
+      "sentiment": "neutral",
+      "notes": "Simple possessive construction with direct mapping."
+    },
+    {
+      "english": "We are eating dinner.",
+      "italian": "Stiamo mangiando.",
+      "french": "Nous sommes en train de dîner.",
+      "type": "straightforward",
+      "sentiment": "neutral",
+      "notes": "Italian often omits 'dinner'; French keeps progressive structure."
+    },
+    {
+      "english": "I miss you.",
+      "italian": "Mi manchi.",
+      "french": "Tu me manques.",
+      "type": "nuanced",
+      "sentiment": "emotional/positive",
+      "notes": "Subject-object inversion; passive emotional framing."
+    },
+    {
+      "english": "It’s getting late.",
+      "italian": "Si sta facendo tardi.",
+      "french": "Il se fait tard.",
+      "type": "nuanced",
+      "sentiment": "neutral",
+      "notes": "Impersonal construction; no direct equivalent of 'it'."
+    },
+    {
+      "english": "He’s right.",
+      "italian": "Ha ragione.",
+      "french": "Il a raison.",
+      "type": "nuanced",
+      "sentiment": "neutral/affirmative",
+      "notes": "Conceptualized as 'having reason' rather than 'being right'."
+    },
+    {
+      "english": "I feel like going out.",
+      "italian": "Ho voglia di uscire.",
+      "french": "J’ai envie de sortir.",
+      "type": "nuanced",
+      "sentiment": "neutral/positive",
+      "notes": "Expressed as 'having desire' rather than a feeling state."
+    },
+    {
+      "english": "Awkward",
+      "italian": "imbarazzante / goffo / strano",
+      "french": "gênant / maladroit / bizarre",
+      "type": "non_translatable",
+      "sentiment": "mildly negative",
+      "notes": "Requires context; multiple meanings split across different words."
+    },
+    {
+      "english": "Cringe",
+      "italian": "che imbarazzo / imbarazzante",
+      "french": "malaisant / ça me gêne",
+      "type": "non_translatable",
+      "sentiment": "negative/social discomfort",
+      "notes": "Internet slang; culturally and generationally dependent."
+    },
+    {
+      "english": "Cozy",
+      "italian": "accogliente / confortevole",
+      "french": "douillet / confortable",
+      "type": "non_translatable",
+      "sentiment": "positive",
+      "notes": "Emotional warmth + physical comfort not captured by a single exact word."
+    },
+    {
+      "english": "Oversharing",
+      "italian": "condividere troppo (informazioni personali)",
+      "french": "trop en dire / divulguer trop d’informations",
+      "type": "non_translatable",
+      "sentiment": "negative/social",
+      "notes": "Modern social concept requiring paraphrase rather than a single lexical item."
+    }
+  ]
+}
