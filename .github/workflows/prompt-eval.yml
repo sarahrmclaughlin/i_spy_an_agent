@@ -24,9 +24,13 @@ jobs:
           python-version: '3.11'
       
       # Step 3: Install Python packages
-      - name: Install dependencies
-        run: |
-          pip install openai anthropic pyyaml python-dotenv
+      # - name: Install dependencies
+      #   run: |
+      #     pip install openai anthropic pyyaml python-dotenv
+      - name: Install UV and sync dependencies
+          run: |
+            pip install uv
+            uv sync
       
       # Step 4: RUN THE ACTUAL EVALUATION
       - name: Run prompt evaluation
