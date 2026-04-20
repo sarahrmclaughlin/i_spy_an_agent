@@ -5,6 +5,7 @@ on:
     paths:
       - 'prompts/**'
       - 'evaluations/test_data/**'
+      - '.github/workflows/prompt-eval.yml'
   pull_request:
     paths:
       - 'prompts/**'
