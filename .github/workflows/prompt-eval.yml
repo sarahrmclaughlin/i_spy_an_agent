@@ -36,7 +36,6 @@ jobs:
       # Step 4: RUN THE ACTUAL EVALUATION
       - name: Run prompt evaluation
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
         run: |
           python evaluations/run_eval.py
