@@ -6,6 +6,7 @@ on:
       - 'prompts/**'
       - 'evaluations/**'
       - '.github/workflows/prompt-eval.yml'
+      - 'pyproject.toml'
   pull_request:
     paths:
       - 'prompts/**'
