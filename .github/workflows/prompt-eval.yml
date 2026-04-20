@@ -44,7 +44,7 @@ jobs:
       # Use this to ensure we have a record of the evaluation results.
       - name: Upload results
         if: always()  # ← KEY: Run even if previous steps failed
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
           name: eval-results  # ← Artifact will be named "eval-results"
           path: evaluations/results/  # ← Upload everything in this folder
