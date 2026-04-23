@@ -113,5 +113,7 @@
 #### Additional Helpful Documentation
 - Prompt/Context Engineering
     - Anthropic Tutorial https://github.com/anthropics/prompt-eng-interactive-tutorial
+    - Reduce AI pitfalls (overcomplication, assumptions done without prompt, unintended changes):
+        - https://github.com/forrestchang/andrej-karpathy-skills
     
 
