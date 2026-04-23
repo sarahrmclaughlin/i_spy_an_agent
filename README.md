@@ -1,12 +1,12 @@
 # 👀 SPY AN AGENT 🤖
-#### *Creating my own LLM API Calls and (hopefully) AI Agents using LLMs*
+#### *Creating my own LLM API Calls and AI Agents using LLMs*
 - This is a repo of learning
 - This repo creates agents by using agents (.claude > agents)
 
 ### *Contents*
-- CLAUDE: Claude.md, a specific Claude agent created to work on this repo, lessons learned about this project that Claude adds to.
+- CLAUDE: Claude.md, a specific Claude agent created to work on this repo, lesson_learned.md key takeaways about this project that Claude adds to.
 - **My First RAG Language Agent notebook**
-- User Prompt is an English word with goal of translating it to Italian and French
+    - User Prompt is an English word with goal of translating it to Italian and French
     - If the word exists in the Knowledge Base (KB), it will reference the translation from there.
     - If it does not exists in KB, call LLM(OpenAI) and store response in KB.
 - **My First Language Agent notebook**
@@ -70,7 +70,7 @@
 - Name: OPENAI_API_KEY (must match what your code expects)
 - Secret: Paste your actual API key
 - Click Add secret
-##### *Include this in Github Actions workflows, for local dev use dotenv*
+##### *Include this in Github Actions workflows. For local dev use dotenv*
 
 #### RAG portion of the project
 - The overall goal is to give an English word and have it translate to French and Italian
