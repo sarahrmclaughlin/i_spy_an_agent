@@ -3,7 +3,9 @@
 - This is a repo of learning
 - This repo creates agents by using agents (.claude > agents)
 
-### *Contents*
+-----------------------------------
+
+### Contents
 - CLAUDE: Claude.md, a specific Claude agent created to work on this repo, lesson_learned.md key takeaways about this project that Claude adds to.
 - **My First RAG Language Agent notebook**
     - User Prompt is an English word with goal of translating it to Italian and French
@@ -17,6 +19,10 @@
 - **Learning** *see: > /learning*
     - Using Anthropics course to reinforce LLM API knowledge.
     - I adapted the course teachings to focus on this project's language goals.
+
+
+
+-----------------------------------
 
 
 ### General Notes 🎶 ♫ about working with LLMs and Agents:
@@ -109,6 +115,9 @@
     ```
 - Next, we set up an index. Similar to DE principals of indexing for efficiency, we are doing the same thing.
 - When we index, we can search faster.
+
+
+-----------------------------------
          
 #### Additional Helpful Documentation
 - Prompt/Context Engineering
