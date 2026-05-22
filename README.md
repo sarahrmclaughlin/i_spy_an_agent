@@ -16,6 +16,8 @@
 - **Prompt Evaluations**
     - a notebook and script for prompt tuning eval metrics.
     - ```/evaluations``` ```/prompts```
+- **Agent ADK** *see: >/my_agent*
+    - Using open source Google's ADK with third party LLMs to develop multi-tool agents
 - **Learning** *see: > /learning*
     - Using Anthropics course to reinforce LLM API knowledge.
     - I adapted the course teachings to focus on this project's language goals.
