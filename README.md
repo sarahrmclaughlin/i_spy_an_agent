@@ -126,5 +126,8 @@
     - Anthropic Tutorial https://github.com/anthropics/prompt-eng-interactive-tutorial
     - Reduce AI pitfalls (overcomplication, assumptions done without prompt, unintended changes):
         - https://github.com/forrestchang/andrej-karpathy-skills
+- View of Local Token Usage 💸 ```uvx agentsview usage daily```
+    - https://www.agentsview.io
+    - https://github.com/kenn-io/agentsview
     
 
